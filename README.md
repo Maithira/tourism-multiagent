@@ -47,19 +47,23 @@ Then visit: `http://localhost:8000/index.html` in your browser.
 
 ## Project Structure
 
-/backend
-app.py
-utils.py
-/agents
-weather_agent.py
-places_agent.py
-/frontend
-index.html
-app.js
-style.css
-README.md
+tourism-multiagent/
+├── backend/
+│ ├── app.py
+│ ├── utils.py
+│ └── agents/
+│ ├── weather_agent.py
+│ └── places_agent.py
+├── frontend/
+│ ├── index.html
+│ ├── app.js
+│ ├── style.css
+│ └── screenshots/
+│ ├── landing.png
+│ └── result.png
+├── README.md
 
-
+undefined
 ---
 
 ## APIs Used
@@ -74,9 +78,9 @@ README.md
 
 ## Screenshots
 
-![Tourism Planner Homepage](frontend/screenshots/landing_1.jpg)
+![Tourism Planner Homepage](frontend/Screenshots/landing_1.jpg)
 
-![Example Search: Bangalore](frontend/screenshots/landing_2.jpg)
+![Example Search: Bangalore](frontend/Screenshots/landing_2.jpg)
 
 
 ---
@@ -89,8 +93,4 @@ README.md
 - Fully API-driven for real-world usefulness.
 
 ---
-
-## License
-
-MIT
 
