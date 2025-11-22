@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tourism Multi-Agent System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tourism Planner</h1>
+    <p style="text-align:center; color:#333; font-size:1.05em;">
+      Enter a city and instantly see the live weather and top tourist attractions!
+    </p>
+
+    <input type="text" id="placeInput" placeholder="Enter a place..." />
+    <button onclick="getTourismInfo()">Check!</button>
+    
+    <div id="loading" style="display:none; text-align:center; margin-top:1em;">
+      <span>Loading...</span>
+    </div>
+
+    <pre id="result"></pre>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
