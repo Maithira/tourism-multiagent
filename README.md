@@ -47,6 +47,7 @@ Then visit: `http://localhost:8000/index.html` in your browser.
 
 ## Project Structure
 
+```
 tourism-multiagent/
 ├── backend/
 │ ├── app.py
@@ -61,9 +62,8 @@ tourism-multiagent/
 │ └── screenshots/
 │ ├── landing.png
 │ └── result.png
-├── README.md
+├── README.md```
 
-undefined
 ---
 
 ## APIs Used
