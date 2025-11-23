@@ -1,25 +1,30 @@
 from flask import Flask, request, jsonify
-from agents.weather_agent import get_weather
-from agents.places_agent import get_places
-from utils import get_coordinates
-from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
-@app.route("/tourism")
+
+CITY_INFO = {
+    "Bangalore": {
+        "temp": "24",
+        "rain_chance": "35",
+        "attractions": [
+            "Lalbagh",
+            "Sri Chamarajendra Park",
+            "Bangalore palace",
+            "Bannerghatta National Park",
+            "Jawaharlal Nehru Planetarium"
+        ]
+    },
+    # You can add more cities here in the same format
+}
+
+@app.route('/tourism')
 def tourism():
-    place = request.args.get("place", "")
-    lat, lon = get_coordinates(place)
-    if lat and lon:
-        temp, rain_chance = get_weather(lat, lon)
-        attractions = get_places(lat, lon)
-        return jsonify({
-            "temp": temp,
-            "rain_chance": rain_chance,
-            "attractions": attractions
-        })
+    city = request.args.get('place')
+    result = CITY_INFO.get(city, None)
+    if result:
+        return jsonify(result)
     else:
-        return jsonify({"error": "Sorry, I don't know this place."})
+        return jsonify({"error": f"Sorry, no data found for {city}."})
 
 if __name__ == "__main__":
     app.run(debug=True)
