@@ -62,7 +62,8 @@ tourism-multiagent/
 │ └── screenshots/
 │ ├── landing.png
 │ └── result.png
-├── README.md```
+├── README.md
+```
 
 ---
 
