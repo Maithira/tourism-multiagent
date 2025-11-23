@@ -79,9 +79,14 @@ tourism-multiagent/
 
 ## Screenshots
 
+**Homepage**
 ![Tourism Planner Homepage](frontend/Screenshots/landing_1.jpg)
 
+**Example Search: Bangalore**
 ![Example Search: Bangalore](frontend/Screenshots/landing_2.jpg)
+
+**Error: Place not found!**
+![Error: Place not found!](frontend/Screenshots/Error_page.jpg)
 
 
 ---
