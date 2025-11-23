@@ -24,3 +24,5 @@ document.getElementById("placeInput").addEventListener("keydown", function(event
     getTourismInfo();
   }
 });
+
+
